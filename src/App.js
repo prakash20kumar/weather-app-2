@@ -16,8 +16,6 @@ class App extends Component {
         axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + this.state.city + '&units=metric&appid=359aa66ecff18573ced234066ba66502')
             .then((response) => {
                 const dt = response.data;
-                console.log(response.status);
-                console.log(dt);
                 rcds.push(dt);
                 this.setState({ records: rcds });
             })
@@ -25,7 +23,6 @@ class App extends Component {
                 console.error("Error: ", error);
             })
             .then(() => {
-                console.log(rcds);
             });
 
         this.setState({ city: '' });
@@ -37,8 +34,6 @@ class App extends Component {
             axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + this.state.city + '&units=metric&appid=359aa66ecff18573ced234066ba66502')
                 .then((response) => {
                     const dt = response.data;
-                    console.log(response.status);
-                    console.log(dt);
                     rcds.push(dt);
                     this.setState({ records: rcds });
                 })
@@ -46,7 +41,6 @@ class App extends Component {
                     console.error("Error: ", error);
                 })
                 .then(() => {
-                    console.log(rcds);
                 });
 
             this.setState({ city: '' });
