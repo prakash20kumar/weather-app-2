@@ -1,0 +1,44 @@
+.container {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid rgb(143, 215, 228);
+  box-shadow: 0 2px 5px blue);
+  margin: 25px;
+  padding: 25px;
+  background-image: linear-gradient(to bottom right, rgb(143, 215, 228), rgb(23, 115, 235));
+  position: relative;
+}
+
+#city {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#icon {
+  width: 55%;
+  margin: -10px 20% 0 20%;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(44, 236, 44);
+    outline: none;
+    border:2px solid darkgreen;
+}
+
+.btn:hover{
+    background-color: rgb(235, 16, 16);
+    outline: none;
+    border:2px solid darkred;
+    color: white;
+}
